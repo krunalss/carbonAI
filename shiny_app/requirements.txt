@@ -1,0 +1,11 @@
+fastapi
+pydantic
+uvicorn
+transformers
+python-dotenv
+streamlit
+requests
+langchain
+langchain_groq
+rsconnect-python
+shiny

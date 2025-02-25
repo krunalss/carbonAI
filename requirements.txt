@@ -1,6 +1,0 @@
-fastapi
-pydantic
-uvicorn
-transformers
-torch
-python-dotenv
