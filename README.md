@@ -28,7 +28,7 @@ This project is a Shiny web application designed to help individuals calculate t
     ```bash
     install.packages(c("shiny", "langchain", "dotenv")) # Add other packages if needed
 
-3. Set up environment variables:
+3. **Set up environment variables:**
 - Create a .env file in the project directory.
 - Add your Groq API key to the .env file:
     ```bash
