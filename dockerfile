@@ -1,30 +1,23 @@
-# Use the official Python image from the Docker Hub
-FROM python:3.10-slim
+# Use Python 3.12.7 slim version for a lightweight image
+FROM python:3.12.7-slim
 
-# Set the working directory in the container
+# Set the working directory inside the container
 WORKDIR /app
 
-# Copy the requirements.txt file into the container at /app
-COPY requirements.txt /app/
-
-# Install the dependencies specified in requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Copy the current directory contents into the container at /app
+# Copy all files to the container
 COPY . /app
 
-# Set environment variable for Hugging Face API token
-ARG HUGGINGFACE_API_TOKEN
-ENV HUGGINGFACE_API_TOKEN=${HUGGINGFACE_API_TOKEN}
+# Install system dependencies (for FastAPI & Groq API)
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    && rm -rf /var/lib/apt/lists/*
 
-# Set environment variable for cache directory
-ENV TRANSFORMERS_CACHE=/app/cache
+# Install Python dependencies
+RUN pip install --no-cache-dir --upgrade pip \
+    && pip install --no-cache-dir -r requirements.txt
 
-# Create cache directory
-RUN mkdir -p /app/cache
-
-# Expose the port on which the app will run
+# Expose port 7860 (FastAPI default)
 EXPOSE 7860
 
-# Run the FastAPI app using Uvicorn
+# Command to run FastAPI using Uvicorn
 CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "7860"]

@@ -1,0 +1,441 @@
+body {
+    background-color: #f4f6f6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #007b5e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.centered-heading {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #007b5e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content {
+    justify-content: center; /* Horizontally center the content */
+    align-items: center;     /* Vertically center the content */
+    padding: 40px;
+}
+
+h1, h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif; 
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+.btn-warning {
+    background-color: #ffca28;
+    border-color: #ffca28;
+}
+
+.btn-info {
+    background-color: #03a9f4;
+    border-color: #03a9f4;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 15px;
+}
+/* Profile photo styling */
+.team-member-photo {
+    border-radius: 50%;
+    height: 170x;
+    width: 170px;
+    margin-right: 20px;
+    border: 2px solid #006400; /* Green border */
+}
+
+.member-profile {
+    margin-bottom: 20px;
+}
+
+.member-details {
+    text-align: left;
+    margin-top: 10px; /* Added margin for mobile view */
+}
+
+/* Flexbox adjustments for smaller screens */
+@media (max-width: 767px) {
+    .d-flex {
+        flex-direction: column;
+    }
+
+    .team-member-photo {
+        margin-right: 0; /* Remove margin for mobile */
+        margin-bottom: 10px; /* Add bottom margin */
+    }
+
+    .member-details {
+        text-align: center; /* Center text for mobile */
+    }
+
+    .btn {
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+/* Insights Section Styling */
+.insights-section {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.insights-table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+.insights-table th, .insights-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.insights-table th {
+    background-color: #4CAF50; /* Adjust color to suit the theme */
+    color: white;
+}
+
+.insights-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.insights-table tr:hover {
+    background-color: #ddd;
+}
+/* Chart container */
+.chart-container {
+    width: 100%;
+    max-width: 600px; /* Ensures the chart doesn't get too wide on large screens */
+    margin: 0 auto; /* Center the chart */
+    padding: 15px;
+}
+/* Chart container */
+.bar-chart-container {
+    width: 100%;
+   /* max-width: 600px; /* Ensures the chart doesn't get too wide on large screens */
+    margin: 0 auto; /* Center the chart */
+    padding: 15px;
+}
+
+/* Media queries for mobile view */
+@media (max-width: 767px) {
+    .chart-container {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 100%; /* Ensure it stretches fully in mobile view */
+    }
+}
+.centered-heading {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: #007b5e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.our-goal-section {
+    background: url('/static/images/globe_image.png') no-repeat center center;
+    background-size: cover;
+    padding: 6rem 0;
+    color: #000000;
+}
+
+.our-goal-section h2 {
+    font-size: calc(2rem + 1vw);
+    color: #ffffff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.our-goal-section p {
+    font-size: calc(1.2rem + 0.5vw);
+    text-shadow: 1px 1px 3px rgb(255, 255, 255);
+}
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+    background: url('../static/images/hero_3.png') no-repeat center center;
+    background-size: cover;
+    color: #333;
+}
+.hero-section img {
+    max-width: 350px;
+    margin-right: 2rem;
+} 
+.hero-section h1 {
+    color: #4b8b3b;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hero-section p {
+    font-size: calc(1.2rem + 0.5vw);
+}
+
+/* Navigation Bar */
+.navbar {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #d8bcb3;
+    padding: 0.5rem;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar-brand img {
+    max-width: 50px;
+    margin-right: 10px;
+}
+.navbar-nav .nav-item .nav-link {
+    color: #333;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+    margin-left: 15px;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    color: #006400;
+    text-decoration: underline;
+}
+/* Awareness Survey Section */
+.awareness-section {
+    background-color: #d8bcb3; /* matching background color */
+    padding: 3rem 0;
+}
+
+.awareness-heading {
+   
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4b2c20; /* dark brown color to match the screenshot */
+    font-family: 'Arial Black', sans-serif; /* or use a similar heavy-weight font */
+}
+
+.awareness-text {
+    font-size: calc(1.2rem + 0.5vw);
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.awareness-btn {
+    background-color: #333; /* dark color for button */
+    color: #fff;
+    border-radius: 25px;
+    padding: 25px 20px;
+    font-size: calc(1.2rem + 0.5vw);
+    text-decoration: none;
+    display: inline-block;
+}
+
+.awareness-btn:hover {
+    background-color: #1d8d15;
+    opacity: 0.9;
+}
+
+/* Carbon Footprint Section */
+.carbon-footprint-section {
+    background-color: #f8f9fa; /* Light background for visibility */
+    padding: 3rem 0;
+}
+
+.carbon-footprint-section h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: #4b8b3b; /* Green color reflecting the environmental theme */
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+.carbon-footprint-text {
+    font-size: calc(1rem + 0.5vw);
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.carbon-footprint-section .fst-italic {
+    font-size: calc(1.2rem + 0.5vw);
+    font-style: italic;
+    color: #555; /* Slightly lighter color to differentiate the intro text */
+    font-family: 'Lora', serif;
+}
+
+.carbon-footprint-section img {
+    max-width: 200px;
+    margin-bottom: 1.5rem;
+}
+
+/* Impacts of Climate Change Section */
+.impacts-section {
+    background-color: #d8bcb3;
+    padding: 3rem 0;
+}
+.impacts-section .impacts-heading {
+    font-size: 3rem;
+    color: #4b2c20;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    text-align: center;
+}
+.impacts-section img {
+    width: 100%;
+    height: 500px;
+    object-fit: contain ;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.impacts-section-text {
+    font-size: calc(1rem + 0.5vw);
+    color: #1d8d15;
+    margin-bottom: 1.5rem; }
+
+/* Take Action Now Section */
+.take-action-section {
+    padding: 3rem 0;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+.take-action-heading {
+    font-size: 2.5rem;
+    color: #4b8b3b;
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+.take-action-subheading {
+    font-size: 1.2rem;
+    color: #333;
+    font-style: italic;
+    font-family: 'Lora', serif;
+    margin-bottom: 2rem;
+}
+.take-action-icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.take-action-icons img {
+    max-width: 150px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.take-action-icons img:hover {
+    transform: scale(1.1);
+}
+/* Fireworks Container */
+#fireworks-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1000;
+   
+    background-color: rgba(0, 0, 0, 0.1); /* Debugging purpose */
+}
+
+/* Brownie Points Pop-up Modal */
+/* Brownie Points Pop-up Modal */
+.brownie-popup {
+    display: none; /* Initially hidden */
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    overflow: auto;
+}
+
+.brownie-popup-content {
+    position: relative;
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: 'Lora', serif;
+}
+
+.brownie-popup-content p {
+    font-size: 1.5rem;
+    color: #4b8b3b; /* Green to reflect environmental theme */
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #aaa;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* General Alignment */
+.text-left {
+    text-align: left;
+}
+
+/* General Section Styles for Layout Consistency */
+@media (max-width: 768px) {
+    .carbon-footprint-section .row {
+        text-align: center;
+    }
+    .carbon-footprint-section img {
+        margin-bottom: 2rem;
+    }
+    .take-action-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Accessibility Improvements */
+.btn:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
+
+.navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
