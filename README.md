@@ -36,33 +36,36 @@
 
 ## 🔧 Installation & Local Setup  
 
+
 ### **1️⃣ Clone the Repository**  
 ```bash
 git clone https://huggingface.co/spaces/your-username/your-space-name
 cd your-space-name
-
----
+```
 
 ### **2️⃣ Create a Virtual Environment (Optional)**
 ```bash
 python -m venv venv
 source venv/bin/activate  # macOS/Linux
 venv\Scripts\activate  # Windows
+```
 
 ### **3️⃣ Install Dependencies
 ```bash
 pip install -r requirements.txt
+```
 
 ### **4️⃣ Set Up Environment Variables
 Create a .env file in the root directory and add your Groq API key:
 
 ```bash
-GROQ_API_KEY=your_groq_api_key
+GROQ_API_KEY=your_groq_api_key 
+```
 
 ### **5️⃣ Run the Application Locally
 ```bash
 uvicorn app:app --host 127.0.0.1 --port 7860 --reload
-
+```
 Open your browser and visit: http://127.0.0.1:7860/
 
 ## **🌐 Deployment on Hugging Face Spaces**
@@ -76,11 +79,23 @@ git add .
 git commit -m "Deploying GreenGauge on Hugging Face"
 git remote add origin https://huggingface.co/spaces/your-username/your-space-name
 git push origin main
+```
 
 4️⃣ Hugging Face will automatically build and deploy your FastAPI app.
 
-## **🐳 Docker Deployment (Local Testing)**
+### **🐳 Docker Deployment (Local Testing)**
 If you want to test using Docker, build and run the container:
 ```bash
 docker build -t greengauge .
 docker run -p 7860:7860 greengauge
+```
+
+### **🏆 Contributors**
+Your Name - Developer & AI Engineer
+🙌 Open to collaborations! Feel free to contribute or suggest improvements.
+
+### **📄 License**
+This project is licensed under the MIT License.
+
+# **🌱 "The greatest threat to our planet is the belief that someone else will save it." – Robert Swan**
+
