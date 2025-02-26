@@ -50,19 +50,19 @@ source venv/bin/activate  # macOS/Linux
 venv\Scripts\activate  # Windows
 ```
 
-### **3️⃣ Install Dependencies
+### **3️⃣ Install Dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-### **4️⃣ Set Up Environment Variables
+### **4️⃣ Set Up Environment Variables**
 Create a .env file in the root directory and add your Groq API key:
 
 ```bash
 GROQ_API_KEY=your_groq_api_key 
 ```
 
-### **5️⃣ Run the Application Locally
+### **5️⃣ Run the Application Locally**
 ```bash
 uvicorn app:app --host 127.0.0.1 --port 7860 --reload
 ```
@@ -70,7 +70,9 @@ Open your browser and visit: http://127.0.0.1:7860/
 
 ## **🌐 Deployment on Hugging Face Spaces**
 1️⃣ Create a new Space on Hugging Face: Hugging Face Spaces.
+
 2️⃣ Select Docker as the runtime environment.
+
 3️⃣ Push the Code to the Hugging Face repository:
 
 ```bash
