@@ -65,7 +65,7 @@ uvicorn app:app --host 127.0.0.1 --port 7860 --reload
 
 Open your browser and visit: http://127.0.0.1:7860/
 
-### **🌐 Deployment on Hugging Face Spaces**
+## **🌐 Deployment on Hugging Face Spaces**
 1️⃣ Create a new Space on Hugging Face: Hugging Face Spaces.
 2️⃣ Select Docker as the runtime environment.
 3️⃣ Push the Code to the Hugging Face repository:
@@ -79,7 +79,7 @@ git push origin main
 
 4️⃣ Hugging Face will automatically build and deploy your FastAPI app.
 
-### **🐳 Docker Deployment (Local Testing)**
+## **🐳 Docker Deployment (Local Testing)**
 If you want to test using Docker, build and run the container:
 ```bash
 docker build -t greengauge .
